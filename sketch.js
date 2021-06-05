@@ -77,7 +77,7 @@ function draw() {
 
     distance = distance + Math.round(getFrameRate() / 50);
     path.velocityX = -(6 + 2 * distance / 150);
-
+    camera.position.y = mainCyclist.y;
     if(keyDown("UP_ARROW")){
       mainCyclist.y -= 1;
     }
